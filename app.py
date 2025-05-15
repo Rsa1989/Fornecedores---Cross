@@ -43,7 +43,7 @@ if uploaded_file:
 
             # Pega o fornecedor da primeira linha para usar no nome do arquivo
             fornecedor_nome = df.loc[0, "Fornecedor"]
-            fornecedor_nome_sanitizado = str(fornecedor_nome).replace(" ", "_").replace("\", "-")
+            fornecedor_nome_sanitizado = str(fornecedor_nome).replace(" ", "_").replace("/", "-")
 
             # Filtra apenas as colunas necessárias
             df_filtrado = df[colunas_esperadas]
